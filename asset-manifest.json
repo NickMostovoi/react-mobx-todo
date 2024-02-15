@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-mobx-todo/static/css/main.2e15154d.css",
-    "main.js": "/react-mobx-todo/static/js/main.31def0c8.js",
+    "main.css": "/react-mobx-todo/static/css/main.218cb7a2.css",
+    "main.js": "/react-mobx-todo/static/js/main.e20e4f72.js",
     "index.html": "/react-mobx-todo/index.html",
-    "main.2e15154d.css.map": "/react-mobx-todo/static/css/main.2e15154d.css.map",
-    "main.31def0c8.js.map": "/react-mobx-todo/static/js/main.31def0c8.js.map"
+    "main.218cb7a2.css.map": "/react-mobx-todo/static/css/main.218cb7a2.css.map",
+    "main.e20e4f72.js.map": "/react-mobx-todo/static/js/main.e20e4f72.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e15154d.css",
-    "static/js/main.31def0c8.js"
+    "static/css/main.218cb7a2.css",
+    "static/js/main.e20e4f72.js"
   ]
 }
