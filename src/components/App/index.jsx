@@ -13,7 +13,7 @@ const App = observer(() => {
 
             todoStore.createTodo({id, title, completed});
         }
-    }
+    };
 
     return (
         <div className={'todo-app'}>
@@ -27,10 +27,12 @@ const App = observer(() => {
             />
             <ul>
                 {todoStore.todos.map(({ id, title, completed }) => (
-                    <li key={id}>
-                        <input type="checkbox" checked={completed} onChange={() => todoStore.completeTodo(id)} />
-                        {title}
-                        <button onClick={() => todoStore.deleteTodo(id)}>X</button>
+                    <li key={id} className={completed ? 'completed' : ''}>
+                        <span>{title}</span>
+                        <div>
+                            <input type="checkbox" checked={completed} onChange={() => todoStore.completeTodo(id)}/>
+                            <button onClick={() => todoStore.deleteTodo(id)}>X</button>
+                        </div>
                     </li>
                 ))}
             </ul>

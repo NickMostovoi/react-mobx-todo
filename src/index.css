@@ -1,61 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
   margin: 20px;
+  font-family: sans-serif;
 }
 
 .todo-app {
-  border: 1px solid #ccc;
-  padding: 20px;
   width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 .todo-app h1 {
-  font-size: 18px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .todo-app input {
-  border: 1px solid #ddd;
-  padding: 5px;
   width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
 }
 
 .todo-app input:focus {
-  outline: none;
   border-color: #999;
 }
 
 .todo-app ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .todo-app li {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
-.todo-app li input {
+.todo-app li.completed span {
+  background-color: #d7d7d7;
+  text-decoration: line-through;
+}
+
+.todo-app li div {
+  display: flex;
+}
+
+.todo-app li div input {
   margin-right: 10px;
+  cursor: pointer;
 }
 
-.todo-app li button {
+.todo-app li div button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
   background-color: #000;
   color: #fff;
-  border: none;
-  padding: 5px 10px;
   cursor: pointer;
-  margin-left: 10px;
 }
 
 .todo-app li button:hover {
   background-color: #333;
-}
-
-.todo-app li.completed {
-  background-color: #fafafa;
-  text-decoration: line-through;
 }

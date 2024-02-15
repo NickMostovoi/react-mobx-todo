@@ -11,17 +11,14 @@ class Todo {
     }
 
     createTodo(todo) {
-        console.log(`create`)
         this.todos.push(todo)
     }
 
     deleteTodo(id) {
-        console.log(`delete`)
         this.todos = this.todos.filter(todo => todo.id !== id)
     }
 
     completeTodo(id) {
-        console.log(`complete`)
         this.todos = this.todos.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo))
     }
 }
